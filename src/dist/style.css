@@ -36,7 +36,8 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: black;
+  background-color: #0F1624;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -62,6 +63,12 @@ header {
   justify-content: space-between;
   width: 210px;
   font-size: 15px;
+}
+.nav__list a {
+  opacity: 0.6;
+}
+.nav__list a:hover {
+  opacity: 1;
 }
 
 body {
