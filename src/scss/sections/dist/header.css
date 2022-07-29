@@ -1,0 +1,32 @@
+header {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+}
+
+.container {
+  margin: 0px 7px 7px 7px;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+.nav__list {
+  flex: 1;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+}
