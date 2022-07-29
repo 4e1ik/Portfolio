@@ -14,18 +14,12 @@ header {
 .header__main {
     display: flex;
     justify-content: space-between;
-    
-    
 }
 
 .header__logo {
     display: flex;
     font-size: 20px;
     align-items: center;
-}
-
-nav {
-    
 }
 
 .nav__list {
@@ -35,4 +29,5 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 210px;
+    font-size: 15px;
 }
