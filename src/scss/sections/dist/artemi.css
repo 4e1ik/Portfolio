@@ -1,0 +1,77 @@
+.artemi__main {
+  padding-top: 60px;
+}
+.artemi__main * {
+  margin: 0px;
+}
+.artemi__main .artemi__pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artemi__main .artemi__photo {
+  position: absolute;
+}
+.artemi__main p {
+  font-size: 20px;
+}
+.artemi__main .artemi__create {
+  padding-top: 18px;
+}
+.artemi__main .artemi__title {
+  font-size: 48px;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+.artemi__main .artemi__button-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.artemi__main .button-gradient {
+  position: relative;
+  border-radius: 83px;
+  padding: 10px 13px 10px 13px;
+  color: #fff;
+  border: none;
+  margin-top: 22px;
+  width: 141px;
+  height: 41px;
+}
+.artemi__main .button-gradient::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+}
+.artemi__main .button-gradient::after {
+  content: "";
+  position: absolute;
+  border-radius: 83px;
+  inset: 0;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+}
+.artemi__main .button-drop {
+  position: absolute;
+  background: rgba(28, 28, 28, 0);
+  border-radius: 83px;
+  padding: 10px 13px 10px 7px;
+  color: #fff;
+  font-family: "Poppins-Medium", sans-serif;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 500% 0;
+  }
+}
