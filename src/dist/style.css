@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poppins-Medium";
   src: url("../../fonts/Poppins-Medium.eot");
@@ -169,6 +170,16 @@ header {
   }
 }
 
+.projects__main {
+  /* Собственно сам слайдер */
+  /* Картинка мастабируется по отношению к родительскому элементу */
+  /* Кнопки вперед и назад */
+  /* При наведении на кнопки добавляем фон кнопок */
+  /* Линия */
+  /* Заголовок слайда */
+  /* Кружочки */
+  /* Анимация слайдов */
+}
 .projects__main .projects__title {
   display: flex;
   justify-content: center;
@@ -177,9 +188,129 @@ header {
 .projects__main .projects__title h2 {
   font-size: 40px;
 }
-.projects__main p {
-  margin-top: 15px;
+.projects__main .slider {
+  max-width: 80%;
+  position: relative;
+  box-shadow: 0px 0px 12px #FFFFFF;
+  border-radius: 50px 0px;
+  height: 300px;
+  margin-bottom: 130px;
+  margin: auto;
+}
+.projects__main .slider .item img {
+  width: 80%;
+  height: 134px;
+  margin-top: 20px;
+  margin-left: 10%;
+  border-radius: 8px;
+}
+.projects__main .slider .prev, .projects__main .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.projects__main .slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.projects__main .slider .prev:hover,
+.projects__main .slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.projects__main .line {
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  left: -25%;
+  background-color: #339acb;
+  border-radius: 83px;
+  margin-bottom: 20px;
+}
+.projects__main .slider__item-button {
+  position: absolute;
+  left: 4.5%;
+  top: 115%;
+}
+.projects__main .slider__item-button {
+  position: absolute;
+  border-radius: 83px;
+  padding: 10px 13px 10px 13px;
+  color: #fff;
+  font-family: "Poppins-Medium", sans-serif;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+  border-radius: 83px;
   text-align: center;
+  left: -1%;
+}
+.projects__main .slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 170px;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  text-align: center;
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+.projects__main .slideText p {
+  position: absolute;
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  left: 12.5%;
+}
+.projects__main .slider-dots {
+  text-align: center;
+}
+.projects__main .slider-dots_item {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #945dd6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.projects__main .active,
+.projects__main .slider-dots_item:hover {
+  background-color: #13adc7;
+}
+.projects__main .slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .skills__main * {
@@ -267,6 +398,9 @@ header {
   margin-bottom: 5px;
 }
 
+.about__main {
+  padding-bottom: 20px;
+}
 .about__main * {
   margin: 0px;
 }
@@ -316,6 +450,26 @@ header {
   text-align: center;
 }
 
+footer {
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .footer__main * {
   margin: 0px;
+}
+.footer__main .footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px 0 10px 0;
+}
+.footer__main ul {
+  padding: 0;
+}
+.footer__main .mail {
+  display: flex;
+}
+.footer__main .text {
+  padding-left: 5px;
 }

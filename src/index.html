@@ -18,13 +18,13 @@
                     <div class="nav__burger"></div>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Проекты</a>
+                            <a href="#projects" class="nav__link">Проекты</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Навыки</a>
+                            <a href="#skills" class="nav__link">Навыки</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Обо мне</a>
+                            <a href="#about" class="nav__link">Обо мне</a>
                         </li>
                     </ul>
                 </nav>
@@ -56,16 +56,58 @@
             </div>
         </section>
         <section class="projects">
+            <a name="projects"></a>
             <div class="container">
                 <div class="projects__main">
                     <div class="projects__title">
                         <h2>Мои проекты</h2>
                     </div>
-                    <p>ЗДЕСЬ БУДЕТ СЛАЙДЕР</p>
+                    <div class="slider">
+                        <div class="item">
+                          <img src="images/slider/Elitvid.svg" alt="Первый слайд">
+                          <div class="slideText">
+                            <h4>Elitvid</h4>
+                            <div class="line"></div>
+                            <p>10.08.2022</p>
+                            <button class="slider__item-button"><a href="https://elitvid.com/">Перейти</a></button>
+                          </div>
+                      </div>
+                  
+                      <div class="item">
+                          <img src="images/slider/recipe.svg" alt="">
+                          <div class="slideText">
+                            <h4>Recipe</h4>
+                            <div class="line"></div>
+                            <p>15.04.2022</p>
+                            <button class="slider__item-button"><a href="https://github.com/4e1ik/WD05_Layout-Recipe-second_hw">Перейти</a></button>
+                          </div>
+                      </div>
+                  
+                      <div class="item">
+                          <img src="images/slider/Djezva.svg" alt="Третий слайд">
+                          <div class="slideText">
+                            <h4>Djezva</h4>
+                            <div class="line"></div>
+                            <p>29.08.2021</p>
+                            <button class="slider__item-button"><a href="https://github.com/4e1ik/Djezva">Перейти</a></button>
+                          </div>
+                      </div>
+                  
+                        <a class="prev" onclick="minusSlide()">&#10094;</a>
+                        <a class="next" onclick="plusSlide()">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <div class="slider-dots">
+                      <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                  </div>
                 </div>
             </div>
         </section>
         <section class="skills">
+            <a name="skills"></a>
             <div class="container">
                 <div class="skills__main">
                     <div class="skills__title">
@@ -135,6 +177,7 @@
             </div>
         </section>
         <section class="about">
+            <a name="about"></a>
             <div class="container">
                 <div class="about__main">
                     <div class="about__title">
@@ -182,24 +225,27 @@
                 <div class="footer__main">
                     <ul class="footer__contacts">
                         <li class="contacts-list__item">
-                            <a href="" class="icon-with-text">
-                                <img src="" alt="Конверт" class="mail">
-                                <span>Aretmi324@tut.by</span>
+                            <a href="" class="mail icon-with-text">
+                                <img src="images/footer/mail.svg" alt="Конверт" class="mail">
+                                <div class="text">
+                                    <p>Пишите</p>
+                                    <span>Artemi324@tut.by</span>
+                                </div>
                             </a>
                         </li>
                         <li class="contacts-list__item">
-                            <a href="" class="icon-with-text">
-                                <img src="" alt="LinkedIn" class="linkedIn">
+                            <a href="https://www.linkedin.com/in/artemi-sevostian-57b244225" class="icon-with-text">
+                                <img src="images/footer/Linkedin.svg" alt="LinkedIn" class="linkedIn">
                             </a>
                         </li>
                         <li class="contacts-list__item">
-                            <a href="" class="icon-with-text">
-                                <img src="" alt="Github" class="github">
+                            <a href="https://github.com/4e1ik" class="icon-with-text">
+                                <img src="images/footer/github.svg" alt="Github" class="github">
                             </a>
                         </li>
                         <li class="contacts-list__item">
-                            <a href="" class="icon-with-text">
-                                <img src="" alt="Инстаграм" class="instagram">
+                            <a href="https://www.instagram.com/4e1ovek.by/" class="icon-with-text">
+                                <img src="images/footer/instagram.svg" alt="Инстаграм" class="instagram">
                             </a>
                         </li>
                     </ul>
@@ -207,5 +253,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
