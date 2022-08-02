@@ -4,10 +4,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/index.html">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/reset.css" type="text/css">
+    <link rel="stylesheet" href="src/dist/style.css" type="text/css">
+    
+    <title>Artemi Sevostian</title>
 </head>
 <body>
-    <p>Привет</p>
+    <header>
+        <div class="container">
+            <div class="header__main">
+                <a class="header__logo" href="#">AC</a>
+                <nav>
+                    <div class="nav__burger"></div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">Проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">Навыки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Обо мне</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="artemi">
+            <div class="container">
+                <div class="artemi__main">
+                    <div class="artemi__pictures">
+                        <div class="artemi__figure">
+                            <img class="figure" src="src/images/Figure.svg" alt="Фигурка">
+                        </div>
+                        <div class="artemi__photo">
+                            <img class="artemi" src="src/images/artemi.svg" alt="Мое фото">
+                        </div>
+                    </div>
+                    <div class="artemi__text">
+                        <p>Меня зовут</p>
+                        <h1 class="artemi__title">Артемий Севостьян</h1>
+                        <p class="artemi__create">Я занимаюсь <span>созданием сайтов</span></p>
+                    </div>
+                    <div class="artemi__button-block">
+                        <div class="button-gradient"></div>
+                        <button class="button-drop artemi__button" type="button"><p>Оставить заявку</p></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <a name="projects"></a>
+            <div class="container">
+                <div class="projects__main">
+                    <div class="projects__title">
+                        <h2>Мои проекты</h2>
+                    </div>
+                    <div class="slider">
+                        <div class="item">
+                          <img src="src/images/slider/Elitvid.svg" alt="Первый слайд">
+                          <div class="slideText">
+                            <h4>Elitvid</h4>
+                            <div class="line"></div>
+                            <p>10.08.2022</p>
+                            <button class="slider__item-button"><a href="https://elitvid.com/">Перейти</a></button>
+                          </div>
+                      </div>
+                  
+                      <div class="item">
+                          <img src="src/images/slider/recipe.svg" alt="">
+                          <div class="slideText">
+                            <h4>Recipe</h4>
+                            <div class="line"></div>
+                            <p>15.04.2022</p>
+                            <button class="slider__item-button"><a href="https://github.com/4e1ik/WD05_Layout-Recipe-second_hw">Перейти</a></button>
+                          </div>
+                      </div>
+                  
+                      <div class="item">
+                          <img src="src/images/slider/Djezva.svg" alt="Третий слайд">
+                          <div class="slideText">
+                            <h4>Djezva</h4>
+                            <div class="line"></div>
+                            <p>29.08.2021</p>
+                            <button class="slider__item-button"><a href="https://github.com/4e1ik/Djezva">Перейти</a></button>
+                          </div>
+                      </div>
+                  
+                        <a class="prev" onclick="minusSlide()">&#10094;</a>
+                        <a class="next" onclick="plusSlide()">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <div class="slider-dots">
+                      <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <a name="skills"></a>
+            <div class="container">
+                <div class="skills__main">
+                    <div class="skills__title">
+                        <h2>Мои навыки</h2>
+                    </div>
+                    <div class="skills__skills-block">
+                        <div class="skills__html">
+                            <div class="skills__skills-text">
+                                <h3 class="skills_text">Html</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                            <div class="scales">
+                                <div class="scale-def"></div>
+                                <div class="scale"></div>
+                            </div>
+                        </div>
+                        <div class="skills__CSS">
+                            <div class="skills__skills-text">
+                                <h3 class="skills_text">CSS</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                            <div class="scales">
+                                <div class="scale-def"></div>
+                                <div class="scale"></div>
+                            </div>
+                        </div>
+                        <div class="skills__javaScript">
+                            <div class="skills__skills-text">
+                                <h3 class="skills_text">JavaScript</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                            <div class="scales">
+                                <div class="scale-def"></div>
+                                <div class="scale scale-60"></div>
+                            </div>
+                        </div>
+                        <div class="skills__PHP">
+                            <div class="skills__skills-text">
+                                <h3 class="skills_text">PHP</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                            <div class="scales">
+                                <div class="scale-def"></div>
+                                <div class="scale"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_text-block">
+                        <div class="skills__text-title">
+                            <h3>Дополнительные навыки и программы</h3>
+                        </div>
+                        <ul class="skills__list">
+                            <li>Git</li>
+                            <li>Quick learning</li>
+                            <li>Docker</li>
+                            <li>OpenServer</li>
+                            <li>Wordpress</li>
+                            <li>Teamwork</li>
+                            <li>B2 english</li>
+                            <li>Photoshop</li>
+                            <li>MySQL</li>
+                            <li>Figma</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <a name="about"></a>
+            <div class="container">
+                <div class="about__main">
+                    <div class="about__title">
+                        <h2>Обо мне</h2>
+                    </div>
+                    <div class="about__text-block">
+                        <p>В 2018 году окончил СШ №3 г. Гродно с <span>золотой медалью</span>. На данный момент учусь на 5 курсе БНТУ. В 2020 году занимался самостоятельным изучением <span>C++</span>, затем увлекся <span>веб-разработкой</span>. Люблю читать, занимаюсь спортом, в прошлом профессиональный пловец, фотограф-любитель.</p>
+                    </div>
+                    <div class="about__timeline">
+                        <div class="about__item">
+                            <div class="timeline"></div>
+                        </div>
+                        <div class="about__timline-block">
+                            <div class="about__year-block">
+                                <h3>2020</h3>
+                                <div class="sphere"></div>
+                                <!-- <div class="timeline"></div> -->
+                                <p>Увлёкся кодингом, начал изучать C++. Понял, что не мое</p>
+                            </div>
+                            <div class="about__year-block">
+                                <p>Начал самостоятельно изучать HTML и CSS</p>
+                                <div class="sphere"></div>
+                                <!-- <div class="timeline"></div> -->
+                                <h3>2021</h3>
+                            </div>
+                            <div class="about__year-block">
+                                <h3>2022</h3>
+                                <div class="sphere"></div>
+                                <!-- <div class="timeline"></div> -->
+                                <p>Прошёл курсы Full-stack Web-developer в школе TeachMeSkills.</p>
+                            </div>
+                            <div class="about__year-block">
+                                <p>В данный момент активно занимаюсь разработков сайтов</p>
+                                <div class="sphere"></div>
+                                <h3>2022</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <ul class="footer__contacts">
+                        <li class="contacts-list__item">
+                            <a href="" class="mail icon-with-text">
+                                <img src="src/images/footer/mail.svg" alt="Конверт" class="mail">
+                                <div class="text">
+                                    <p>Пишите</p>
+                                    <span>Artemi324@tut.by</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="https://www.linkedin.com/in/artemi-sevostian-57b244225" class="icon-with-text">
+                                <img src="src/images/footer/Linkedin.svg" alt="LinkedIn" class="linkedIn">
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="https://github.com/4e1ik" class="icon-with-text">
+                                <img src="src/images/footer/github.svg" alt="Github" class="github">
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="https://www.instagram.com/4e1ovek.by/" class="icon-with-text">
+                                <img src="src/images/footer/instagram.svg" alt="Инстаграм" class="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="src/script.js"></script>
+
 </body>
 </html>
