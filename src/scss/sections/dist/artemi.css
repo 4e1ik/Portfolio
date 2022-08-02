@@ -19,11 +19,11 @@
   padding-top: 18px;
 }
 .artemi__main .artemi__title {
-  font-size: 48px;
   padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 48px;
 }
 .artemi__main .artemi__button-block {
   display: flex;
@@ -66,6 +66,10 @@
   border: none;
   margin-top: 22px;
   cursor: pointer;
+}
+.artemi__main .button-drop p:hover {
+  font-size: 19px;
+  padding-left: 4px;
 }
 @keyframes animate {
   0% {

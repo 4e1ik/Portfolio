@@ -1,0 +1,48 @@
+.about__main * {
+  margin: 0px;
+}
+.about__main .about__title {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+.about__main .about__title h2 {
+  font-size: 40px;
+}
+.about__main .about__text-block {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+}
+.about__main .about__item {
+  display: flex;
+  justify-content: center;
+}
+.about__main .timeline {
+  position: absolute;
+  width: 4px;
+  height: 487px;
+  margin-top: 125px;
+  background-color: #fff;
+  text-align: center;
+}
+.about__main .sphere {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.about__main .about__year-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+.about__main .about__year-block p {
+  width: 160px;
+  text-align: center;
+}
+.about__main .about__year-block h3 {
+  width: 160px;
+  text-align: center;
+}

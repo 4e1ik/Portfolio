@@ -1,0 +1,61 @@
+.about__main {
+    * {
+        margin: 0px;
+    }
+
+    .about__title {
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .about__text-block {
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .about__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeline {
+        position: absolute;
+        width: 4px;
+        height: 487px;
+        margin-top: 125px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .sphere {
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        background-color: #fff;
+    }
+
+    .about__year-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+
+
+        p {
+            width: 160px;
+            text-align: center;
+        }
+
+        h3 {
+            width: 160px;
+            text-align: center;
+        }
+        
+    }
+}

@@ -1,0 +1,12 @@
+.projects__main .projects__title {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+.projects__main .projects__title h2 {
+  font-size: 40px;
+}
+.projects__main p {
+  margin-top: 15px;
+  text-align: center;
+}
