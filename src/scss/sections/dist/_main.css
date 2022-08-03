@@ -50,9 +50,6 @@ header {
 .artemi__main .artemi__photo {
   position: absolute;
 }
-.artemi__main p {
-  font-size: 20px;
-}
 .artemi__main .artemi__create {
   padding-top: 18px;
 }
@@ -63,51 +60,36 @@ header {
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 48px;
 }
+.artemi__main .artemi__text p {
+  font-size: 20px;
+}
 .artemi__main .artemi__button-block {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.artemi__main .button-gradient {
-  position: relative;
-  border-radius: 83px;
-  padding: 10px 13px 10px 13px;
-  color: #fff;
-  border: none;
-  margin-top: 22px;
-  width: 141px;
-  height: 41px;
-}
-.artemi__main .button-gradient::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
-  animation: animate 20s linear infinite;
-  background-size: 500%;
-}
-.artemi__main .button-gradient::after {
-  content: "";
-  position: absolute;
-  border-radius: 83px;
-  inset: 0;
-  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
-  animation: animate 20s linear infinite;
-  background-size: 500%;
-}
 .artemi__main .button-drop {
-  position: absolute;
-  background: rgba(28, 28, 28, 0);
   border-radius: 83px;
-  padding: 10px 13px 10px 7px;
+  padding: 15px 13px 15px 13px;
   color: #fff;
   font-family: "Poppins-Medium", sans-serif;
   border: none;
   margin-top: 22px;
   cursor: pointer;
+  text-align: center;
+  inset: 0;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+  animation: animate 20s linear infinite;
+  background-size: 500%;
 }
-.artemi__main .button-drop p:hover {
-  font-size: 19px;
-  padding-left: 4px;
+.artemi__main .button-drop p {
+  font-size: 20px;
+}
+.artemi__main .button-drop:hover {
+  transform: scale(1.02);
+}
+.artemi__main .button-drop:active {
+  transform: scale(0.98);
 }
 @keyframes animate {
   0% {
@@ -126,9 +108,54 @@ header {
 .projects__main .projects__title h2 {
   font-size: 40px;
 }
-.projects__main p {
-  margin-top: 15px;
+.projects__main .slide {
   text-align: center;
+}
+.projects__main .slide-text h4 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.projects__main .slide-text p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.projects__main .slidder-button {
+  border-radius: 5px;
+  padding: 5px 3px 5px 3px;
+  color: #fff;
+  font-family: "Poppins-Medium", sans-serif;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  inset: 0;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+  width: 100px;
+}
+.projects__main .slidder-button p {
+  font-size: 15px;
+}
+.projects__main .line {
+  width: 160px;
+  height: 2px;
+  margin: auto;
+  inset: 0;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 500% 0;
+  }
 }
 
 .skills__main * {
@@ -216,6 +243,9 @@ header {
   margin-bottom: 5px;
 }
 
+.about__main {
+  padding-bottom: 20px;
+}
 .about__main * {
   margin: 0px;
 }
@@ -232,15 +262,17 @@ header {
   text-align: center;
   padding-top: 10px;
 }
-.about__main .about__timeline {
-  margin-top: 55px;
+.about__main .about__item {
+  display: flex;
+  justify-content: center;
 }
 .about__main .timeline {
   position: absolute;
   width: 4px;
   height: 487px;
-  margin-top: 130px;
+  margin-top: 125px;
   background-color: #fff;
+  text-align: center;
 }
 .about__main .sphere {
   width: 12px;
@@ -261,4 +293,28 @@ header {
 .about__main .about__year-block h3 {
   width: 160px;
   text-align: center;
+}
+
+footer {
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer__main * {
+  margin: 0px;
+}
+.footer__main .footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px 0 10px 0;
+}
+.footer__main ul {
+  padding: 0;
+}
+.footer__main .mail {
+  display: flex;
+}
+.footer__main .text {
+  padding-left: 5px;
 }
