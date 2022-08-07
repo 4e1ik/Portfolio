@@ -6,8 +6,15 @@
 .projects__main .projects__title h2 {
   font-size: 40px;
 }
+.projects__main .swiper {
+  z-index: 1;
+}
 .projects__main .slide {
   text-align: center;
+  box-shadow: 0px 0px 12px #FFFFFF;
+  border-radius: 50px 0px;
+  margin: 15px 25px 15px 25px;
+  padding: 20px;
 }
 .projects__main .slide-text h4 {
   margin: 0;
@@ -21,8 +28,8 @@
   padding-bottom: 5px;
 }
 .projects__main .slidder-button {
-  border-radius: 5px;
-  padding: 5px 3px 5px 3px;
+  border-radius: 83px;
+  padding: 15px 13px 15px 13px;
   color: #fff;
   font-family: "Poppins-Medium", sans-serif;
   border: none;
@@ -33,10 +40,16 @@
   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
   animation: animate 20s linear infinite;
   background-size: 500%;
-  width: 100px;
 }
 .projects__main .slidder-button p {
+  margin: 0;
   font-size: 15px;
+}
+.projects__main .slidder-button:hover {
+  transform: scale(1.02);
+}
+.projects__main .slidder-button:active {
+  transform: scale(0.98);
 }
 .projects__main .line {
   width: 160px;

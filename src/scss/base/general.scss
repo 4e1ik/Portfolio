@@ -17,3 +17,110 @@ span {
     margin:0px 15px 0px 15px;
 }
 
+button {
+    cursor: pointer;
+}
+
+.artemi__form {
+    // display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+
+    .artemi__form-item {
+        display: flex;
+        justify-content: end;
+    }
+
+    
+
+    .artemi__form-content {
+        margin:60px auto;
+        width: 375px;
+        height: 630px;
+        background-color: #0F1624;
+        border-radius:15px;
+    }
+
+    .artemi__form-form {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+
+    h4 {
+        font-size: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .item-form {
+        width: 330px;
+        height: 27px;
+        border-radius: 12px;
+        border-color:#945DD6;
+        margin-top: 30px;
+    }
+
+    textarea{
+        width: 330px;
+        height: 120px;
+        border-radius: 12px;
+        border-color:#945DD6;
+        margin-top: 30px;
+        font-size: 18px;
+        text-align:start;
+    }
+
+    textarea::placeholder {
+        color:#6978D1;
+    }
+
+    .item-form::placeholder {
+        color:#6978D1;
+        font-size: 18px;
+    }
+
+    .artemi__item-button {
+        border-radius: 83px;
+        padding: 15px 13px 15px 13px;
+        color: #fff;
+        font-family:  'Poppins-Medium',sans-serif;
+        border: none;
+        margin-top: 22px;
+        cursor: pointer;
+        text-align: center;
+        inset: 0;
+        background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+        animation: animate 20s linear infinite;
+        background-size: 500%;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .artemi__item-button:hover {
+        transform: scale(1.02);
+    }
+
+    .artemi__item-button:active {
+        transform: scale(0.98);
+    }
+
+    @keyframes animate {
+        0%{
+            background-position: 0 0;
+        }
+        0%{
+            background-position: 500% 0;
+        }
+    }
+}
