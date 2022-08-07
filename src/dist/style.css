@@ -54,6 +54,7 @@ button {
 }
 
 .artemi__form {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -63,6 +64,7 @@ button {
 .artemi__form .artemi__form-item {
   display: flex;
   justify-content: end;
+  margin-right: 15px;
 }
 .artemi__form .artemi__form-content {
   margin: 60px auto;
@@ -130,6 +132,9 @@ button {
 .artemi__form .artemi__item-button:active {
   transform: scale(0.98);
 }
+.artemi__form .button-close {
+  padding: 20px;
+}
 @keyframes animate {
   0% {
     background-position: 0 0;
@@ -137,6 +142,10 @@ button {
   0% {
     background-position: 500% 0;
   }
+}
+
+.active {
+  display: block;
 }
 
 header {
