@@ -114,7 +114,11 @@ button {
     }
 
     .button-close {
-        padding: 20px;
+        margin-top: 15px;
+        border: none;
+        color:#fff;
+        background-color:rgba($color: #000000, $alpha: 0)
+
     }
 
     @keyframes animate {
@@ -125,8 +129,6 @@ button {
             background-position: 500% 0;
         }
     }
-
-
 }
 
 .active {
