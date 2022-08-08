@@ -151,6 +151,33 @@ button {
   display: block;
 }
 
+.body-item {
+  position: fixed;
+  top: 88%;
+  left: 80%;
+  z-index: 3;
+}
+.body-item .button-up {
+  border-radius: 83px;
+  padding: 15px 16px;
+  color: #fff;
+  font-family: "Poppins-Medium", sans-serif;
+  border: none;
+  margin-top: 22px;
+  cursor: pointer;
+  text-align: center;
+  inset: 0;
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 25%, #945DD6 50%, #6978D1 75%, #13ADC7 100%);
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+}
+.body-item .button-up:hover {
+  transform: scale(1.02);
+}
+.body-item .button-up:active {
+  transform: scale(0.98);
+}
+
 header {
   display: block;
   position: fixed;
