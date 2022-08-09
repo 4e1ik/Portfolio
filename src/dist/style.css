@@ -58,7 +58,7 @@ button {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
   background-color: rgba(0, 0, 0, 0.75);
 }
 .artemi__form .artemi__form-item {
@@ -155,7 +155,7 @@ button {
   position: fixed;
   top: 82.5%;
   left: 80%;
-  z-index: 3;
+  z-index: 2;
 }
 .body-item .button-up {
   border-radius: 83px;
@@ -393,7 +393,6 @@ header {
   position: absolute;
   border: none;
   border-radius: 10px;
-  width: 70%;
   height: 8px;
   margin-top: 5px;
 }
@@ -401,7 +400,6 @@ header {
   position: absolute;
   border: none;
   border-radius: 10px;
-  width: 60%;
   height: 8px;
 }
 .skills__main .scale::before {
