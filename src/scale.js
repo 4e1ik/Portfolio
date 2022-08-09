@@ -31,8 +31,6 @@ function progress () {
 
 let elem = document.getElementById('skills-block');
 
-let rect = elem.getBoundingClientRect();
-
 function getOffset(el) {
     const rect = el.getBoundingClientRect();
     return {
