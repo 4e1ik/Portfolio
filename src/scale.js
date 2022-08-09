@@ -29,29 +29,7 @@ function progress () {
     }
 }
 
-// progress();
-
 let elem = document.getElementById('skills-block');
-
-// console.log(getScale(elem));
-// console.log(elem.getBoundingClientRect());
-
-// function getScale(elem) {
-//     let scale = elem.getBoundingClientRect();
-
-//     return {
-//         top: scale.top + window.pageYOffset,
-//         left: scale.left + window.pageXOffset
-
-//         // top: window.pageYOffset,
-//         // left: window.pageXOffset
-
-//         // top: scale.top,
-//         // left: scale.left
-//     };
-// }
-
-// progress();
 
 let rect = elem.getBoundingClientRect();
 
@@ -62,26 +40,16 @@ function getOffset(el) {
       top: rect.top + window.scrollY
     };
 }
-
-// console.log(getOffset(elem).top);
-// console.log(window.scrollY);
-
-// document.documentElement.clientHeight + 150
               
 window.addEventListener('scroll', ()=>{
     const documentRect = document.documentElement.getBoundingClientRect();
     console.log(documentRect.top);
-    if (documentRect.bottom < getOffset(elem).top+750){
+    if (documentRect.bottom < getOffset(elem).top+window.scrollY){
         console.log('dsfdg');
         progress();
 
         progress = function () {
             return false
         }
-
-        
     }
-
-    
-    
 });
