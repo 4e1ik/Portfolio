@@ -59,6 +59,92 @@
             text-align: center;
             font-size: 35px;
         }
+
+        .about__tablet-item {
+            display: none;
+        }
+
+        .sphere-tablet {
+            display: none;
+        }
         
+    }
+
+    .about__baseline {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+
+    .about__main {
+
+        .about__item {
+            display: none;
+        }
+
+        .about__timline-block {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .timeline_tablet {
+            width: 75%;
+            height: 5px;
+            border-radius: 12px;
+            background-color: #fff;
+            position: absolute;
+            top: 99px;
+            // left: 50px;
+            text-align: center;
+        }
+
+        .about__year-block {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-content: space-around;
+            // align-items: center;
+            padding-top: 50px;
+    
+            .about__tablet-item {
+                display: block;
+            }
+
+            h3 {
+                display: none;
+            }
+
+            .sphere {
+                display: none;
+            }
+
+            .sphere-tablet {
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 12px;
+                background-color: #fff;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                width: 160px;
+                height: 100px;
+                margin: auto;
+                // vertical-align: middle;
+            }
+            
+        }
+
+        .about__baseline {
+            display: block;
+            background-color: #fff;
+            height: 5px;
+            width: 100%;
+            margin-top: 100px;
+        }
     }
 }

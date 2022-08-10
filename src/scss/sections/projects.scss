@@ -90,4 +90,40 @@
             background-position: 500% 0;
         }
     }
+
+    .projects__tablet {
+        display:none;
+    }
+}
+
+
+
+@media (min-width: 767px) {
+
+    .projects__main {
+        .swiper {
+            display: none;
+        }
+
+        .projects__tablet {
+            display:flex;
+            justify-content: space-around;
+            align-content: flex-start;
+            flex-wrap: wrap;
+    
+            .slide {
+                text-align: center;
+                box-shadow: 0px 0px 12px #FFFFFF;
+                border-radius: 50px 0px;
+                margin: 0px 15px;
+                padding: 30px 15px;
+            }
+
+            .swiper-slide {
+                width: 320px;
+                margin-top: 20px;
+            }
+        }
+
+    }    
 }

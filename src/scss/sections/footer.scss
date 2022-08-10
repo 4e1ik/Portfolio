@@ -27,4 +27,56 @@ footer {
         padding-left: 5px;
     }
 
+    .footer__portfolio-text {
+        display: none;
+    }
+
+    .footer_by {
+        display: none;
+    }
+
+    .linkedIn {
+        padding-top: 4px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .footer__main {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+
+        .footer__portfolio-text{
+            display: block;
+            text-align: center;
+        }
+
+        .footer_by {
+            display: block;
+            text-align: center;
+        }
+
+
+        .footer__contacts {
+            width: 300px;
+            justify-content: space-between;
+            align-items:center;
+            
+            a {
+                height: 27px;
+            }
+        }
+
+        .text {
+            display: none;
+        }
+
+    }
+
+    
+
+    // .footer__contacts:first-child {
+    //     justify-content: flex-start;
+    // }
 }

@@ -40,6 +40,19 @@ header {
     }
 }
 
+.header__logo-tablet {
+    display: none;
+}
 
+@media (min-width: 767px) {
 
+    .header__logo {
+        display: none;
+    }
 
+    .header__logo-tablet {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+    }
+}

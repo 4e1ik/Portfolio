@@ -16,7 +16,13 @@
         position: absolute;
     }
 
-    
+    .figure-tablet {
+        display: none;
+    }
+
+    .artemi-tablet {
+        display: none;
+    }
 
     .artemi__create {
         padding-top: 18px;
@@ -77,5 +83,57 @@
         0%{
             background-position: 500% 0;
         }
+    }
+}
+
+@media (min-width: 767px) {
+
+    .artemi__main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items:center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .artemi__main {
+        
+        .figure-tablet {
+            display: block;
+            width: 500px;
+        }
+
+        .artemi-tablet {
+            display: block;
+            width: 400px;
+        }
+
+        .figure {
+            display: none;
+        }
+    
+        .artemi {
+            display: none;
+        }
+
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .artemi__main {
+        
+        .figure-tablet {
+            display: block;
+            width: 700px;
+        }
+
+        .artemi-tablet {
+            display: block;
+            width: 600px;
+        }
+
     }
 }
