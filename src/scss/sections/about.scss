@@ -106,7 +106,7 @@
             flex-direction: column;
             align-content: space-around;
             // align-items: center;
-            padding-top: 50px;
+            padding-top: 80px;
     
             .about__tablet-item {
                 display: block;
@@ -145,6 +145,164 @@
             height: 5px;
             width: 100%;
             margin-top: 100px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about__main {
+
+        padding-bottom: 20px;
+
+        .about__title {
+            padding-top: 80px;
+
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .about__text-block {
+            font-size: 20px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        
+        .about__year-block {
+
+            h3 {
+                font-size: 45px;
+            }
+
+            p {
+                width: 200px;
+                font-size: 20px;
+            }
+        }
+
+        .about__year-block {
+
+            .sphere-tablet {
+                width: 15px;
+                height: 15px;
+                border-radius: 100px;
+            }
+
+        }
+
+        .timeline_tablet {
+            height: 7px;
+            top: 141px;
+        }
+
+        .about__baseline {
+            height: 6px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .about__main {
+
+        padding-bottom: 20px;
+
+        .about__title {
+            padding-top: 200px;
+
+            h2 {
+                font-size: 50px;
+            }
+        }
+
+        .about__text-block {
+            font-size: 25px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .about__year-block {
+
+            h3 {
+                font-size: 50px;
+            }
+
+            p {
+                width: 250px;
+                font-size: 25px;
+            }
+        }
+
+        .about__year-block {
+
+            .sphere-tablet {
+                width: 15px;
+                height: 15px;
+                border-radius: 100px;
+            }
+
+        }
+
+        .timeline_tablet {
+            height: 7px;
+            top: 146px;
+        }
+
+        .about__baseline {
+            margin-top: 170px;
+            height: 6px;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .about__main {
+
+        padding-bottom: 25px;
+
+        .about__title {
+            padding-top: 250px;
+
+            h2 {
+                font-size: 55px;
+            }
+        }
+
+        .about__text-block {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 25px;
+        }
+        
+        .about__year-block {
+
+            h3 {
+                font-size: 55px;
+            }
+
+            p {
+                width: 350px;
+                font-size: 30px;
+            }
+        }
+
+        .about__year-block {
+
+            .sphere-tablet {
+                width: 18px;
+                height: 18px;
+                border-radius: 100px;
+            }
+
+        }
+
+        .timeline_tablet {
+            height: 8px;
+            top: 154px;
+        }
+
+        .about__baseline {
+            margin-top: 170px;
+            height: 6px;
         }
     }
 }

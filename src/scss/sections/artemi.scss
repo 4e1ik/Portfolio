@@ -89,20 +89,40 @@
 @media (min-width: 767px) {
 
     .artemi__main {
+        padding-top: 70px;
         display: flex;
         flex-direction: row-reverse;
         align-items:center;
         justify-content: space-between;
+
+        .artemi__text {
+            p {
+                font-size: 25px;
+            }
+        }
+
+        .artemi__title {
+            font-size: 55px;
+        }
+
+        .button-drop {    
+            p {
+                font-size: 25px;
+            }
+        }
     }
+
+
 }
 
 @media (min-width: 1024px) {
 
     .artemi__main {
+        padding-top: 80px;
         
         .figure-tablet {
             display: block;
-            width: 500px;
+            width: 600px;
         }
 
         .artemi-tablet {
@@ -121,9 +141,11 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1400px) {
 
     .artemi__main {
+
+        padding-top: 120px;
         
         .figure-tablet {
             display: block;
@@ -132,7 +154,61 @@
 
         .artemi-tablet {
             display: block;
+            width: 500px;
+        }
+
+        .artemi__text {
+            p {
+                font-size: 30px;
+            }
+        }
+
+        .artemi__title {
+            font-size: 60px;
+        }
+
+        .button-drop {    
+            p {
+                font-size: 30px;
+            }
+        }
+
+    }
+}
+
+
+
+@media (min-width: 1920px) {
+
+    .artemi__main {
+
+        padding-top: 150px;
+        
+        .figure-tablet {
+            display: block;
+            width: 800px;
+        }
+
+        .artemi-tablet {
+            display: block;
             width: 600px;
+        }
+
+        .artemi__text {
+            p {
+                font-size: 35px;
+            }
+        }
+
+        .artemi__title {
+            font-size: 80px;
+        }
+
+        .button-drop { 
+            padding: 20px 18px 20px 18px;   
+            p {
+                font-size: 35px;
+            }
         }
 
     }

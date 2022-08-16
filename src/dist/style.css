@@ -245,6 +245,11 @@ header {
   opacity: 1;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .header__logo-tablet {
   display: none;
 }
@@ -258,6 +263,34 @@ header {
     display: flex;
     font-size: 20px;
     align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .header__logo-tablet {
+    font-size: 25px;
+  }
+
+  .nav__list {
+    font-size: 20px;
+    width: 310px;
+  }
+
+  .header__main {
+    height: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .header__logo-tablet {
+    font-size: 30px;
+  }
+
+  .nav__list {
+    font-size: 25px;
+    width: 410px;
+  }
+
+  .header__main {
+    height: 100px;
   }
 }
 .artemi__main {
@@ -332,16 +365,29 @@ header {
 
 @media (min-width: 767px) {
   .artemi__main {
+    padding-top: 70px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
   }
+  .artemi__main .artemi__text p {
+    font-size: 25px;
+  }
+  .artemi__main .artemi__title {
+    font-size: 55px;
+  }
+  .artemi__main .button-drop p {
+    font-size: 25px;
+  }
 }
 @media (min-width: 1024px) {
+  .artemi__main {
+    padding-top: 80px;
+  }
   .artemi__main .figure-tablet {
     display: block;
-    width: 500px;
+    width: 600px;
   }
   .artemi__main .artemi-tablet {
     display: block;
@@ -354,14 +400,51 @@ header {
     display: none;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1400px) {
+  .artemi__main {
+    padding-top: 120px;
+  }
   .artemi__main .figure-tablet {
     display: block;
     width: 700px;
   }
   .artemi__main .artemi-tablet {
     display: block;
+    width: 500px;
+  }
+  .artemi__main .artemi__text p {
+    font-size: 30px;
+  }
+  .artemi__main .artemi__title {
+    font-size: 60px;
+  }
+  .artemi__main .button-drop p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .artemi__main {
+    padding-top: 150px;
+  }
+  .artemi__main .figure-tablet {
+    display: block;
+    width: 800px;
+  }
+  .artemi__main .artemi-tablet {
+    display: block;
     width: 600px;
+  }
+  .artemi__main .artemi__text p {
+    font-size: 35px;
+  }
+  .artemi__main .artemi__title {
+    font-size: 80px;
+  }
+  .artemi__main .button-drop {
+    padding: 20px 18px 20px 18px;
+  }
+  .artemi__main .button-drop p {
+    font-size: 35px;
   }
 }
 .projects__main .projects__title {
@@ -451,6 +534,7 @@ header {
     justify-content: space-around;
     align-content: flex-start;
     flex-wrap: wrap;
+    padding-top: 40px;
   }
   .projects__main .projects__tablet .slide {
     text-align: center;
@@ -461,6 +545,56 @@ header {
   }
   .projects__main .projects__tablet .swiper-slide {
     width: 320px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .projects__main .projects__title {
+    padding-top: 90px;
+  }
+  .projects__main .projects__title h2 {
+    font-size: 45px;
+  }
+  .projects__main .slide-text h4 {
+    font-size: 25px;
+  }
+  .projects__main .slidder-button p {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .projects__main .projects__title {
+    padding-top: 90px;
+  }
+  .projects__main .projects__title h2 {
+    font-size: 50px;
+  }
+  .projects__main .slide-text h4 {
+    font-size: 30px;
+  }
+  .projects__main .slidder-button p {
+    margin: 0;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1920px) {
+  .projects__main .projects__title {
+    padding-top: 100px;
+  }
+  .projects__main .projects__title h2 {
+    font-size: 55px;
+  }
+  .projects__main .slide-text h4 {
+    font-size: 35px;
+  }
+  .projects__main .slidder-button p {
+    margin: 0;
+    font-size: 30px;
+  }
+  .projects__main .projects__tablet .swiper-slide {
+    width: 320px;
+    height: 300px;
     margin-top: 20px;
   }
 }
@@ -547,6 +681,147 @@ header {
   margin-bottom: 5px;
 }
 
+@media (min-width: 767px) {
+  .skills__main .skills__title {
+    padding-top: 80px;
+  }
+  .skills__main .skills__title h2 {
+    font-size: 40px;
+  }
+  .skills__main .skills__skills-text {
+    font-size: 20px;
+  }
+  .skills__main .skills__skills-block {
+    padding-top: 39px;
+  }
+  .skills__main .scale-def {
+    height: 10px;
+  }
+  .skills__main .scale {
+    height: 10px;
+  }
+  .skills__main .scale-60 {
+    height: 10px;
+  }
+  .skills__main .skills_text-block {
+    margin-top: 50px;
+  }
+  .skills__main .skills__text-title {
+    font-size: 20px;
+  }
+  .skills__main .skills__list {
+    font-size: 19px;
+  }
+  .skills__main li {
+    width: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .skills__main .skills__title {
+    padding-top: 80px;
+  }
+  .skills__main .skills__title h2 {
+    font-size: 45px;
+  }
+  .skills__main .skills__skills-text {
+    font-size: 25px;
+  }
+  .skills__main .skills__skills-block {
+    padding-top: 50px;
+  }
+  .skills__main .scale-def {
+    height: 15px;
+  }
+  .skills__main .scale {
+    height: 15px;
+  }
+  .skills__main .scale-60 {
+    height: 15px;
+  }
+  .skills__main .skills_text-block {
+    margin-top: 55px;
+  }
+  .skills__main .skills__text-title {
+    font-size: 25px;
+  }
+  .skills__main .skills__list {
+    font-size: 24px;
+  }
+  .skills__main li {
+    width: 200px;
+  }
+}
+@media (min-width: 1400px) {
+  .skills__main .skills__title {
+    padding-top: 200px;
+  }
+  .skills__main .skills__title h2 {
+    font-size: 50px;
+  }
+  .skills__main .skills__skills-text {
+    font-size: 30px;
+  }
+  .skills__main .skills__skills-block {
+    padding-top: 55px;
+  }
+  .skills__main .scale-def {
+    height: 20px;
+  }
+  .skills__main .scale {
+    height: 20px;
+  }
+  .skills__main .scale-60 {
+    height: 20px;
+  }
+  .skills__main .skills_text-block {
+    margin-top: 90px;
+  }
+  .skills__main .skills__text-title {
+    font-size: 30px;
+  }
+  .skills__main .skills__list {
+    padding-top: 50px;
+    font-size: 29px;
+  }
+  .skills__main li {
+    width: 250px;
+  }
+}
+@media (min-width: 1920px) {
+  .skills__main .skills__title {
+    padding-top: 200px;
+  }
+  .skills__main .skills__title h2 {
+    font-size: 55px;
+  }
+  .skills__main .skills__skills-text {
+    font-size: 35px;
+  }
+  .skills__main .skills__skills-block {
+    padding-top: 60px;
+  }
+  .skills__main .scale-def {
+    height: 25px;
+  }
+  .skills__main .scale {
+    height: 25px;
+  }
+  .skills__main .scale-60 {
+    height: 25px;
+  }
+  .skills__main .skills_text-block {
+    margin-top: 100px;
+  }
+  .skills__main .skills__text-title {
+    font-size: 35px;
+  }
+  .skills__main .skills__list {
+    font-size: 34px;
+  }
+  .skills__main li {
+    width: 300px;
+  }
+}
 .about__main {
   padding-bottom: 20px;
 }
@@ -632,7 +907,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
     align-content: space-around;
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .about__main .about__year-block .about__tablet-item {
     display: block;
@@ -663,6 +938,113 @@ header {
     height: 5px;
     width: 100%;
     margin-top: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .about__main {
+    padding-bottom: 20px;
+  }
+  .about__main .about__title {
+    padding-top: 80px;
+  }
+  .about__main .about__title h2 {
+    font-size: 45px;
+  }
+  .about__main .about__text-block {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .about__main .about__year-block h3 {
+    font-size: 45px;
+  }
+  .about__main .about__year-block p {
+    width: 200px;
+    font-size: 20px;
+  }
+  .about__main .about__year-block .sphere-tablet {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+  }
+  .about__main .timeline_tablet {
+    height: 7px;
+    top: 141px;
+  }
+  .about__main .about__baseline {
+    height: 6px;
+  }
+}
+@media (min-width: 1400px) {
+  .about__main {
+    padding-bottom: 20px;
+  }
+  .about__main .about__title {
+    padding-top: 200px;
+  }
+  .about__main .about__title h2 {
+    font-size: 50px;
+  }
+  .about__main .about__text-block {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .about__main .about__year-block h3 {
+    font-size: 50px;
+  }
+  .about__main .about__year-block p {
+    width: 250px;
+    font-size: 25px;
+  }
+  .about__main .about__year-block .sphere-tablet {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+  }
+  .about__main .timeline_tablet {
+    height: 7px;
+    top: 146px;
+  }
+  .about__main .about__baseline {
+    margin-top: 170px;
+    height: 6px;
+  }
+}
+@media (min-width: 1920px) {
+  .about__main {
+    padding-bottom: 25px;
+  }
+  .about__main .about__title {
+    padding-top: 250px;
+  }
+  .about__main .about__title h2 {
+    font-size: 55px;
+  }
+  .about__main .about__text-block {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .about__main .about__year-block h3 {
+    font-size: 55px;
+  }
+  .about__main .about__year-block p {
+    width: 350px;
+    font-size: 30px;
+  }
+  .about__main .about__year-block .sphere-tablet {
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+  }
+  .about__main .timeline_tablet {
+    height: 8px;
+    top: 154px;
+  }
+  .about__main .about__baseline {
+    margin-top: 170px;
+    height: 6px;
   }
 }
 footer {
@@ -698,6 +1080,14 @@ footer {
   padding-top: 4px;
 }
 
+@media (min-width: 767px) {
+  .footer__main .mail {
+    width: 250px;
+  }
+  .footer__main .text {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1024px) {
   .footer__main {
     display: flex;
@@ -707,10 +1097,12 @@ footer {
   .footer__main .footer__portfolio-text {
     display: block;
     text-align: center;
+    font-size: 20px;
   }
   .footer__main .footer_by {
     display: block;
     text-align: center;
+    font-size: 15px;
   }
   .footer__main .footer__contacts {
     width: 300px;
@@ -722,5 +1114,39 @@ footer {
   }
   .footer__main .text {
     display: none;
+  }
+  .footer__main .mail {
+    width: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__main .footer__portfolio-text {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+  }
+  .footer__main .footer_by {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .footer__main .footer__contacts {
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__main .footer__contacts a {
+    height: 27px;
+  }
+  .footer__main .text {
+    display: none;
+  }
+  .footer__main .mail {
+    width: 50px;
   }
 }
